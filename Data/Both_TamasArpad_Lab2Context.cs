@@ -17,5 +17,7 @@ namespace Both_TamasArpad_Lab2.Data
         public DbSet<Both_TamasArpad_Lab2.Models.Book> Book { get; set; } = default!;
 
         public DbSet<Both_TamasArpad_Lab2.Models.Publisher>? Publisher { get; set; }
+
+        public DbSet<Both_TamasArpad_Lab2.Models.Author>? Author { get; set; }
     }
 }
