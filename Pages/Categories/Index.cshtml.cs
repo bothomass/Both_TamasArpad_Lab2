@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Both_TamasArpad_Lab2.Data;
 using Both_TamasArpad_Lab2.Models;
 using Both_TamasArpad_Lab2.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Both_TamasArpad_Lab2.Pages.Categories
 {
+    [Authorize(Roles = "Admin")]
     public class IndexModel : PageModel
     {
         private readonly Both_TamasArpad_Lab2.Data.Both_TamasArpad_Lab2Context _context;
